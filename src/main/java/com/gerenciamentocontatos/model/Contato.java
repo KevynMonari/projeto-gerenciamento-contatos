@@ -26,6 +26,10 @@ public class Contato {
     @JoinColumn(name = "grupo_id")
     private Grupo grupo;
 
+    public Contato(){
+        
+    }
+
     public Contato(String nome, String email, String telefone, String endereco,
             LocalDate dataNascimento, String observacoes, Grupo grupo) {
         this.nome = nome;
